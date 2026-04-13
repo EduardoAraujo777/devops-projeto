@@ -1,0 +1,28 @@
+name: CI/CD DevOps Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Rodar build (se tiver)
+        run: echo "build ok"
+
+      - name: Build Docker image
+        run: docker build -t minha-api .
