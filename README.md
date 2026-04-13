@@ -56,12 +56,18 @@ A pipeline executa automaticamente:
 docker build -t hello-devops .
 
 rodar container:
-docker build -t hello-devops .
+docker run -p 3001:3000 hello-devops
 ```
-📍 Endpoints
+## 📍 Endpoints
 / → retorna status da API
 /health → verifica se a API está saudável
-📚 Aprendizados
+
+
+---
+
+
+
+## 📚 Aprendizados
 
 Durante esse projeto, pratiquei:
 
@@ -70,7 +76,11 @@ Uso de Docker para containerização
 Integração com GitHub Actions (CI/CD)
 Automação de build e testes
 Conceitos básicos de DevOps
-🚀 Futuro
+
+---
+
+
+## 🚀 Futuro
 
 Próximas melhorias planejadas:
 
@@ -78,3 +88,5 @@ Deploy em AWS EC2
 Infraestrutura como código com Terraform
 Monitoramento com Grafana
 Melhoria da pipeline CI/CD
+
+---
