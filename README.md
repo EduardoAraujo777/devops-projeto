@@ -45,10 +45,9 @@ A pipeline executa automaticamente:
 1. Instala dependências  
 2. Executa testes  
 3. Faz build da imagem Docker  
-4. Publica no Docker Hub
+4. Publica no Docker Hub  
 
 ---
-
 
 ## 🐳 Docker
 
@@ -56,31 +55,26 @@ A pipeline executa automaticamente:
 ```bash
 docker build -t hello-devops .
 
-Rodar container:
-docker run -p 3001:3000 hello-devops
-
-## 📍 Endpoints
-
-- `/` → retorna status da API
-- `/health` → verifica se a API está saudável
-
-
-## 📚 Aprendizados
+rodar container:
+docker build -t hello-devops .
+```
+📍 Endpoints
+/ → retorna status da API
+/health → verifica se a API está saudável
+📚 Aprendizados
 
 Durante esse projeto, pratiquei:
 
-- Criação de API com Node.js e Express
-- Uso de Docker para containerização
-- Integração com GitHub Actions (CI/CD)
-- Automação de build e testes
-- Conceitos básicos de DevOps
-
-🚀 FUTURO (CORRIGIDO)
-## 🚀 Futuro
+Criação de API com Node.js e Express
+Uso de Docker para containerização
+Integração com GitHub Actions (CI/CD)
+Automação de build e testes
+Conceitos básicos de DevOps
+🚀 Futuro
 
 Próximas melhorias planejadas:
 
-- Deploy em AWS EC2
-- Infraestrutura como código com Terraform
-- Monitoramento com Grafana
-- Melhoria da pipeline CI/CD
+Deploy em AWS EC2
+Infraestrutura como código com Terraform
+Monitoramento com Grafana
+Melhoria da pipeline CI/CD
