@@ -48,23 +48,7 @@ A pipeline executa automaticamente:
 4. Publica no Docker Hub
 
 ---
-## 📍 Endpoints
-/ → status da API
-/health → health check
-📚 Aprendizados
-CI/CD com GitHub Actions
-Docker na prática
-Automação de deploy
-Integração de ferramentas DevOps
 
----
-
-## 🚀 Futuro
-Deploy em AWS EC2
-Terraform
-Monitoramento com Grafana
-
----
 
 ## 🐳 Docker
 
@@ -74,3 +58,29 @@ docker build -t hello-devops .
 
 Rodar container:
 docker run -p 3001:3000 hello-devops
+
+## 📍 Endpoints
+
+- `/` → retorna status da API
+- `/health` → verifica se a API está saudável
+
+
+## 📚 Aprendizados
+
+Durante esse projeto, pratiquei:
+
+- Criação de API com Node.js e Express
+- Uso de Docker para containerização
+- Integração com GitHub Actions (CI/CD)
+- Automação de build e testes
+- Conceitos básicos de DevOps
+
+🚀 FUTURO (CORRIGIDO)
+## 🚀 Futuro
+
+Próximas melhorias planejadas:
+
+- Deploy em AWS EC2
+- Infraestrutura como código com Terraform
+- Monitoramento com Grafana
+- Melhoria da pipeline CI/CD
