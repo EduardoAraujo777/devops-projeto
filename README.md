@@ -14,27 +14,27 @@ Fluxo do projeto:
 
 GitHub → GitHub Actions → Docker Hub → Container (execução local)
 🧰 Tecnologias utilizadas
-Node.js
-Express
-Docker
-GitHub Actions
-Jest (testes)
-GitHub
+-Node.js
+-Express
+-Docker
+-GitHub Actions
+-Jest (testes)
+-GitHub
 🚀 Funcionalidades
-API REST simples
-Endpoint de status /
-Endpoint de health check /health
-Testes automatizados
-Pipeline CI/CD
-Build e deploy de imagem Docker
+-API REST simples
+-Endpoint de status /
+-Endpoint de health check /health
+-Testes automatizados
+-Pipeline CI/CD
+-Build e deploy de imagem Docker
 🔄 Pipeline CI/CD
 
 A pipeline executa automaticamente:
 
-Instalação de dependências
-Execução de testes automatizados
-Build da imagem Docker
-Push da imagem para Docker Hub
+1-Instalação de dependências
+2-Execução de testes automatizados
+3-Build da imagem Docker
+4-Push da imagem para Docker Hub
 📦 Como executar localmente
 # clonar repositório
 git clone <repo>
@@ -47,6 +47,7 @@ node app.js
 🐳 Rodando com Docker
 docker build -t hello-devops .
 docker run -p 3001:3000 hello-devops
+
 📍 Endpoints
 / → status da API
 /health → health check
@@ -58,6 +59,7 @@ Como funciona CI/CD
 Uso de Docker em ambiente real
 Automatização de processos
 Integração entre GitHub e pipeline
+
 🚀 Futuro
 Deploy em nuvem (AWS EC2)
 Terraform para infraestrutura
