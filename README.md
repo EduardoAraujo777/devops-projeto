@@ -45,7 +45,24 @@ A pipeline executa automaticamente:
 1. Instala dependências  
 2. Executa testes  
 3. Faz build da imagem Docker  
-4. Publica no Docker Hub  
+4. Publica no Docker Hub
+
+---
+## 📍 Endpoints
+/ → status da API
+/health → health check
+📚 Aprendizados
+CI/CD com GitHub Actions
+Docker na prática
+Automação de deploy
+Integração de ferramentas DevOps
+
+---
+
+## 🚀 Futuro
+Deploy em AWS EC2
+Terraform
+Monitoramento com Grafana
 
 ---
 
@@ -57,4 +74,3 @@ docker build -t hello-devops .
 
 Rodar container:
 docker run -p 3001:3000 hello-devops
-
