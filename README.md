@@ -1,66 +1,73 @@
-🚀 Projeto DevOps com Node.js + Docker + CI/CD
+# 🚀 Projeto DevOps com Node.js + Docker + CI/CD
 
-Este projeto foi desenvolvido com foco em aprendizado prático de DevOps, aplicando conceitos de automação, containerização e integração contínua.
+Projeto criado para praticar conceitos de DevOps como automação, containerização e integração contínua.
 
-📌 Sobre o projeto
+---
 
-Trata-se de uma API simples desenvolvida em Node.js utilizando Express, containerizada com Docker e integrada a uma pipeline CI/CD usando GitHub Actions.
+## 📌 Sobre o projeto
 
-O objetivo é simular um fluxo real de entrega de software, desde o desenvolvimento até a automação do build e testes.
+API simples em Node.js utilizando Express, containerizada com Docker e automatizada com GitHub Actions (CI/CD).
 
-⚙️ Arquitetura
+---
 
-Fluxo do projeto:
+## ⚙️ Arquitetura
 
-GitHub → GitHub Actions → Docker Hub → Container (execução local)
-🧰 Tecnologias utilizadas
--Node.js
--Express
--Docker
--GitHub Actions
--Jest (testes)
--GitHub
-🚀 Funcionalidades
--API REST simples
--Endpoint de status /
--Endpoint de health check /health
--Testes automatizados
--Pipeline CI/CD
--Build e deploy de imagem Docker
-🔄 Pipeline CI/CD
+GitHub → GitHub Actions → Docker Hub → Container (local)
+
+---
+
+## 🧰 Tecnologias
+
+- Node.js  
+- Express  
+- Docker  
+- GitHub Actions  
+- Jest  
+- Git & GitHub  
+
+---
+
+## 🚀 Funcionalidades
+
+- API REST simples  
+- Endpoint `/` (status da API)  
+- Endpoint `/health` (health check)  
+- Testes automatizados  
+- Pipeline CI/CD  
+- Build de imagem Docker  
+
+---
+
+## 🔄 Pipeline CI/CD
 
 A pipeline executa automaticamente:
 
-1-Instalação de dependências
-2-Execução de testes automatizados
-3-Build da imagem Docker
-4-Push da imagem para Docker Hub
-📦 Como executar localmente
-# clonar repositório
-git clone <repo>
+1. Instala dependências  
+2. Executa testes  
+3. Faz build da imagem Docker  
+4. Publica no Docker Hub  
 
-# instalar dependências
-npm install
+---
 
-# rodar aplicação
-node app.js
-🐳 Rodando com Docker
+## 🐳 Docker
+
+### Build da imagem:
+```bash
 docker build -t hello-devops .
+
+Rodar container:
 docker run -p 3001:3000 hello-devops
 
 📍 Endpoints
 / → status da API
 /health → health check
 📚 Aprendizados
-
-Este projeto me ajudou a entender na prática:
-
-Como funciona CI/CD
-Uso de Docker em ambiente real
-Automatização de processos
-Integração entre GitHub e pipeline
+CI/CD com GitHub Actions
+Docker na prática
+Automação de deploy
+Integração de ferramentas DevOps
 
 🚀 Futuro
-Deploy em nuvem (AWS EC2)
-Terraform para infraestrutura
+Deploy em AWS EC2
+Terraform
 Monitoramento com Grafana
