@@ -58,16 +58,3 @@ docker build -t hello-devops .
 Rodar container:
 docker run -p 3001:3000 hello-devops
 
-📍 Endpoints
-/ → status da API
-/health → health check
-📚 Aprendizados
-CI/CD com GitHub Actions
-Docker na prática
-Automação de deploy
-Integração de ferramentas DevOps
-
-🚀 Futuro
-Deploy em AWS EC2
-Terraform
-Monitoramento com Grafana
